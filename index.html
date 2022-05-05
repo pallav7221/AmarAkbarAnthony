@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var amar = {
+        name: "amar",
+        skill: "singer",
+        live: "Goa",
+       
+    }
+    var akbar = {
+        name: "akbar",
+        skill: "chef",
+        live: "mumbai",
+       
+    }
+    
+     var anthony = {
+            name: "anthony",
+            skill: "magician",
+            live: "Kashmir",
+           
+        }
+       var singer = function () {
+                console.log(this.name + " is a " + this.skill);
+            }
+        var chef = function () {
+                console.log(this.name + " is a " + this.skill);
+            }
+        var  magic = function () {
+                console.log(this.name + " is a " + this.skill);
+            }
+        chef.call(amar);
+        chef.call(anthony);
+
+        singer.call(akbar)
+        singer.call(anthony)
+
+        magic.call(amar)
+        magic.call(akbar)
+
+
+</script>
+
+</html>
